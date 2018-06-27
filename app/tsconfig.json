@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es5",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
