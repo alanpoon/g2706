@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title of the document</title>
+<title>G2706</title>
+<style>
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
 </head>
-
 <body>
-
     <form >
         <ol>
             <li>What is your saving amount?
                 <div>
-                    <input type="radio" name="radio1" value=0 id="o1"><label for="o1">0</label>
-                    <input type="radio" name="radio1" value=2000 id="o2"><label for="o2">2000</label>
-                    <input type="radio" name="radio1" value=4000 id="o3"><label for="o3">4000</label>
-                    <input type="radio" name="radio1" value=6000 id="o4"><label for="o4">6000</label>
-                    <input type="radio" name="radio1" value=8000 id="o5"><label for="o5">8000</label>
-                    <input type="radio" name="radio1" value=10000 id="o6"><label for="o6">10000</label>
+                    <input type="radio" name="radio1" value=0 id="o1"><label for="o1">0</label><br/>
+                    <input type="radio" name="radio1" value=2000 id="o2"><label for="o2">2000</label><br/>
+                    <input type="radio" name="radio1" value=4000 id="o3"><label for="o3">4000</label><br/>
+                    <input type="radio" name="radio1" value=6000 id="o4"><label for="o4">6000</label><br/>
+                    <input type="radio" name="radio1" value=8000 id="o5"><label for="o5">8000</label><br/>
+                    <input type="radio" name="radio1" value=10000 id="o6"><label for="o6">10000</label><br/>
                 </div>
             </li>
             <li>What is your loan amount?
                 <div>
-                    <input type="radio" name="radio2" value=0 id="o1"><label for="o1">0</label>
-                    <input type="radio" name="radio2" value=2000 id="o2"><label for="o2">2000</label>
-                    <input type="radio" name="radio2" value=4000 id="o3"><label for="o3">4000</label>
-                    <input type="radio" name="radio2" value=6000 id="o4"><label for="o4">6000</label>
-                    <input type="radio" name="radio2" value=8000 id="o5"><label for="o5">8000</label>
-                    <input type="radio" name="radio2" value=10000 id="o6"><label for="o6">10000</label>
+                    <input type="radio" name="radio2" value=0 id="o1"><label for="o1">0</label><br/>
+                    <input type="radio" name="radio2" value=2000 id="o2"><label for="o2">2000</label><br/>
+                    <input type="radio" name="radio2" value=4000 id="o3"><label for="o3">4000</label><br/>
+                    <input type="radio" name="radio2" value=6000 id="o4"><label for="o4">6000</label><br/>
+                    <input type="radio" name="radio2" value=8000 id="o5"><label for="o5">8000</label><br/>
+                    <input type="radio" name="radio2" value=10000 id="o6"><label for="o6">10000</label><br/>
                 </div>
             </li>
         </ol>
-        <input type="submit" value="Submit" id="submit">  
+        <button type="button" id="submit">Submit</button>
     </form>
-    <div id="target">
-    </div>
+    <div id="target"></div>
+    <div class="loader" style="display:none"></div>
 </body>
-<script src="dist/bundle.js"></script>
+<script src="bundle.js"></script>
 </html>
