@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/alanpoon/g2706#readme",
   "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/jquery": "^3.3.4",
+    "@types/mongodb": "^3.0.23",
     "browserify": "^16.2.2",
     "gulp": "^3.9.1",
     "gulp-typescript": "^5.0.0-alpha.2",
@@ -26,12 +29,11 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "@types/express": "^4.16.0",
-    "@types/jquery": "^3.3.4",
+    "assert": "^1.4.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
-    "passport": "^0.4.0",
+    "mongodb": "^3.1.0",
     "path": "^0.12.7"
   }
 }

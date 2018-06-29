@@ -1,6 +1,7 @@
 import * as $ from "jquery";
 $("#submit").click(function(){
     let o={};
+    o["user"]=$("#n").val();
     o["q1"]=$("input[name='radio1']:checked").val();
     o["q2"]=$("input[name='radio2']:checked").val();
     $(".loader").css("display","inline-display");
